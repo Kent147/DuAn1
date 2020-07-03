@@ -1,0 +1,27 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package com.poly.test;
+
+import com.poly.dao.NguoiDungDAO;
+import com.poly.model.NguoiDung;
+
+/**
+ *
+ * @author THANHLONG
+ */
+public class NewMain {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        NguoiDung nguoiDung = new NguoiDungDAO().getListNguoiDung().get(0);
+        System.out.println(nguoiDung.getHoten());
+        
+        
+    }
+    
+}
